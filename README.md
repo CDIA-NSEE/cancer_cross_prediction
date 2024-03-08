@@ -1,9 +1,81 @@
-# Cancer Cross Prediction
+# Cancer Cross Prediction - English version
 
 
 ## **Introduction**
 
 The project aims to assess the possibility of machine learning models trained with a specific type of cancer predicting the 3-year survival after the disease diagnosis for patients with other types. Two analyses were conducted, one using the six most incident types of cancer (skin, breast, prostate, lung, colorectal, and cervical) and another with types related to the digestive system (mouth, oropharynx, esophagus, stomach, small intestine, colorectal, and anus). Metrics were obtained for each type individually and compared with the results obtained when using mixed types to train the models.
+
+## How to run
+
+To start running the notebooks in this repository, follow these steps:
+
+1. Clone this repository to your local enviroment using the following command:
+
+    ```git clone https://github.com/DCD-NSEE/cancer_cross_prediction```
+
+
+2. Open the notebooks in your Python development environment, preferably [Google Colaboratory](https://research.google.com/colaboratory/), but you can also use [Jupyter Notebook](https://jupyter.org/) or [VSCode](https://code.visualstudio.com/) locally.
+
+3. Install the required python libraries
+   
+## Setting up the project locally
+
+### Creating the virtual enviroment (venv)
+
+#### Windows
+
+```console
+python -m venv venv
+```
+
+#### Linux
+
+```
+virtualenv -p python3.10 venv
+```
+
+### Activating the venv
+
+#### Windows
+
+```console
+venv\Scripts\activate
+```
+
+#### Linux
+
+```console
+source venv/bin/activate
+```
+
+### installing the packages
+
+```console
+pip install -e .
+
+pip install -r requirements.txt
+```
+
+## Contributions
+
+We encourage contributions from other students, teachers, researchers, or data science enthusiasts. If you wish to contribute with your own content, corrections, or improvements to the notebooks, follow these steps:
+
+1. Fork this repository.
+
+2. Make your changes in your fork.
+
+3. Submit a pull request describing your changes and reasons.
+
+## Contact
+
+If you have any questions or need assistance, feel free to contact the author:
+
+Send an email to [Pedro Mesquita](mailto:pedro.gjmesquita@gmail.com), to [Lucas Buk](maailto:lucasbukcardoso@gmail.com) or directly to [NSEE](mailto:nsee@maua.br).
+
+---
+
+# Cancer Cross Prediction - Versão em português
+
 
 ## **Introdução**
 
@@ -74,17 +146,17 @@ Encorajamos contribuições de outros alunos, professores, pesquisadores ou entu
 
 Se você tiver dúvidas ou precisar de assistência, sinta-se à vontade para entrar em contato com o autor:
 
-Enviar email para [Pedro Mesquita](mailto:pedro.gjmesquita@gmail.com) ou para [Lucas Buk](maailto:lucasbukcardoso@gmail.com).
+Enviar email para [Pedro Mesquita](mailto:pedro.gjmesquita@gmail.com), para [Lucas Buk](maailto:lucasbukcardoso@gmail.com) ou diretamente para o [NSEE](mailto:nsee@maua.br)
 
-## **Authors**
+## **Authors\Autores**
 
-* Lucas Buk Cardoso - Instituto Mauá de Tecnologia
-* Vanderlei Cunha Parro - Instituto Mauá de Tecnologia
-* Jones Egydio - Instituto Mauá de Tecnologia
-* Pedro Mesquita - Instituto Mauá de Tecnologia
-* Bryan Chin - Instituto Mauá de Tecnologia 
-* Adeylson Ribeiro - Fundação Oncocentro de São Paulo
-* Maria Paula Curado - A.C. Camargo Cancer Center
-* Gisele Fernandes - A.C. Camargo Cancer Center
-* Nanci Utida - Faculdade de Saúde Pública da Universidade de São Paulo
-* Tatiana Natasha Toporcov - Faculdade de Saúde Pública da Universidade de São Paulo
+* [Lucas Buk Cardoso](https://www.linkedin.com/in/lucas-buk-cardoso-b52189294/) - [Instituto Mauá de Tecnologia](https://www.maua.br/)
+* [Vanderlei Cunha Parro](https://www.linkedin.com/in/vparro/) - [Instituto Mauá de Tecnologia](https://www.maua.br/)
+* [Jones Egydio](https://www.linkedin.com/in/jones-egydio-msc-3300359/) - [Instituto Mauá de Tecnologia](https://www.maua.br/)
+* [Pedro Mesquita](https://www.linkedin.com/in/pedro-mesquita-917252258/) - [Instituto Mauá de Tecnologia](https://www.maua.br/)
+* [Bryan Chin]() - [Instituto Mauá de Tecnologia](https://www.maua.br/)
+* [Adeylson Ribeiro](https://www.linkedin.com/in/adeylson-ribeiro-phd-13169514/) - [Fundação Oncocentro de São Paulo](https://fosp.saude.sp.gov.br/)
+* [Maria Paula Curado](https://accamargo.org.br/pesquisador/maria-paula-curado) - [A.C. Camargo Cancer Center](https://accamargo.org.br/)
+* [Gisele Fernandes](https://accamargo.org.br/pesquisador/gisele-aparecida-fernandes) - [A.C. Camargo Cancer Center]https://accamargo.org.br/()
+* [Nanci Utida](https://www.linkedin.com/in/nanciutida/) - [Faculdade de Saúde Pública da Universidade de São Paulo](https://www.fsp.usp.br/site/)
+* [Tatiana Natasha Toporcov](https://www.linkedin.com/in/tatiana-toporcov-6b94b3a/) - [Faculdade de Saúde Pública da Universidade de São Paulo](https://www.fsp.usp.br/site/)
