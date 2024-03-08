@@ -157,6 +157,6 @@ Enviar email para [Pedro Mesquita](mailto:pedro.gjmesquita@gmail.com), para [Luc
 * [Bryan Chin]() - [Instituto Mauá de Tecnologia](https://www.maua.br/)
 * [Adeylson Ribeiro](https://www.linkedin.com/in/adeylson-ribeiro-phd-13169514/) - [Fundação Oncocentro de São Paulo](https://fosp.saude.sp.gov.br/)
 * [Maria Paula Curado](https://accamargo.org.br/pesquisador/maria-paula-curado) - [A.C. Camargo Cancer Center](https://accamargo.org.br/)
-* [Gisele Fernandes](https://accamargo.org.br/pesquisador/gisele-aparecida-fernandes) - [A.C. Camargo Cancer Center]https://accamargo.org.br/()
+* [Gisele Fernandes](https://accamargo.org.br/pesquisador/gisele-aparecida-fernandes) - [A.C. Camargo Cancer Center](https://accamargo.org.br/)
 * [Nanci Utida](https://www.linkedin.com/in/nanciutida/) - [Faculdade de Saúde Pública da Universidade de São Paulo](https://www.fsp.usp.br/site/)
 * [Tatiana Natasha Toporcov](https://www.linkedin.com/in/tatiana-toporcov-6b94b3a/) - [Faculdade de Saúde Pública da Universidade de São Paulo](https://www.fsp.usp.br/site/)
