@@ -9,7 +9,7 @@ ___
 
 The project aims to assess the possibility of machine learning models trained with a specific type of cancer predicting the 3-year survival after the disease diagnosis for patients with other types. Two analyses were conducted, one using the six most incident types of cancer (skin, breast, prostate, lung, colorectal, and cervical) and another with types related to the digestive system (mouth, oropharynx, esophagus, stomach, small intestine, colorectal, and anus). Metrics were obtained for each type individually and compared with the results obtained when using mixed types to train the models.
 
-## How to run
+## **How to run**
 
 To start running the notebooks in this repository, follow these steps:
 
@@ -22,7 +22,7 @@ To start running the notebooks in this repository, follow these steps:
 
 3. Install the required python libraries
    
-## Setting up the project locally
+## **Setting up the project locally**
 
 ### Creating the virtual enviroment (venv)
 
@@ -60,7 +60,7 @@ pip install -e .
 pip install -r requirements.txt
 ```
 
-## Contributions
+## **Contributions**
 
 We encourage contributions from other students, teachers, researchers, or data science enthusiasts. If you wish to contribute with your own content, corrections, or improvements to the notebooks, follow these steps:
 
@@ -70,7 +70,7 @@ We encourage contributions from other students, teachers, researchers, or data s
 
 3. Submit a pull request describing your changes and reasons.
 
-## Contact
+## **Contact**
 
 If you have any questions or need assistance, feel free to contact the author:
 
@@ -98,7 +98,7 @@ Para começar a usar os recursos deste repositório, siga estas etapas:
 
 3. Instale as bibliotecas necessárias no python
    
-## Configurando o projeto para rodar
+## **Configurando o projeto para rodar**
 
 ### Criando o ambiente virtual (venv)
 
@@ -136,7 +136,7 @@ pip install -e .
 pip install -r requirements.txt
 ```
 
-## Contribuições
+## **Contribuições**
 
 Encorajamos contribuições de outros alunos, professores, pesquisadores ou entusiastas da ciência de dados. Se você deseja contribuir com seu próprio conteúdo, correções ou melhorias nos notebooks, siga estas etapas:
 
@@ -146,7 +146,7 @@ Encorajamos contribuições de outros alunos, professores, pesquisadores ou entu
 
 3. Envie um pull request descrevendo suas alterações e motivos.
 
-## Contato
+## **Contato**
 
 Se você tiver dúvidas ou precisar de assistência, sinta-se à vontade para entrar em contato com o autor:
 
