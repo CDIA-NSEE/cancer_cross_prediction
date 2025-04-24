@@ -187,14 +187,16 @@ def get_train_test(df, drop_cols, label, test_size=0.25, random_state=0):
     df_aux = df.copy()
 
     # Select features and target variable
-    features = df_aux.drop(columns=drop_cols)
-    target = df_aux[label]
+    cols = df_aux.columns.drop(drop_cols)
+    lb = df_aux[label].copy()
+    cols = cols.drop(label)
+    feat = df_aux[cols]
 
     # Split data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(features, target,
+    X_train, X_test, y_train, y_test = train_test_split(feat, lb,
                                                     test_size=test_size,
                                                     random_state=random_state,
-                                                    stratify=target)
+                                                    stratify=lb)
 
     return X_train, X_test, y_train, y_test
 
@@ -222,12 +224,17 @@ def train_preprocessing(df, ohe_encoder=None, normalizer='StandardScaler'):
     df_aux = df.copy()
 
     enc = {}  # Dictionary to store encoders
-    if ohe_encoder:
+    if ohe_encoder != None:
         # Apply one-hot encoding to specified columns
         for col in ohe_encoder:
             enc[col] = OneHotEncoder(handle_unknown='ignore', drop='first')
             ohe_results = enc[col].fit_transform(df_aux[[col]])
-            # ... (rest of the one-hot encoding logic)
+            df1 = pd.DataFrame(ohe_results.toarray(),
+                               columns=enc[col].get_feature_names_out(),
+                               index=df_aux[col].index)
+            df_aux = df_aux.merge(df1, how='left', left_index=True, right_index=True)
+
+        df_aux.drop(columns=ohe_encoder, inplace=True)
 
     # Apply label encoding to remaining categorical columns
     list_categorical = df_aux.select_dtypes(include='object').columns
@@ -324,6 +331,7 @@ def preprocessing(df, cols_drop, label, test_size=0.25, ohe_encoder=None,
             - enc (optional): Dictionary of encoders used.
             - norm (optional): Normalization object used.
     """
+    df_aux = df.copy()
 
     # Split data into training and testing sets
     X_train, X_test, y_train, y_test = get_train_test(df_aux, cols_drop, label,
@@ -339,6 +347,8 @@ def preprocessing(df, cols_drop, label, test_size=0.25, ohe_encoder=None,
     # Balance training data if specified
     if balance_data:
         X_train_, y_train_ = SMOTE(random_state=random_state).fit_resample(X_train_enc, y_train)
+    else:
+        X_train_, y_train_ = X_train_enc, y_train
 
     # Print shapes for verification
     print(f'X_train = {X_train_.shape}, X_test = {X_test_.shape}')
